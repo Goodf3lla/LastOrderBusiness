@@ -20,7 +20,15 @@
     <string name="sid_restaurant_name">Name</string>
     <string name="sid_restaurant_address">Address</string>
     <string name="sid_restaurant_email">Email</string>
-    <string name="sid_restaurnat_password">Password</string>
-    <string name="sid_restaurnat_phonenumber">Phone Number</string>
+    <string name="sid_restaurant_password">Password</string>
+    <string name="sid_restaurant_phonenumber">Phone Number</string>
     <string name="sid_restaurant_signup">Sign up</string>
+    <string name="title_activity_main_navigation_drawer">MainNavigationDrawerActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
