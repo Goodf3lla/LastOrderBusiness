@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.Button;
 
 import smartdev.lastorderbusiness.MainActivity;
-import smartdev.lastorderbusiness.MainNavigationDrawer;
 import smartdev.lastorderbusiness.R;
 
 import static smartdev.lastorderbusiness.R.id.button_login;
@@ -29,7 +28,7 @@ public class LoginActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this,MainNavigationDrawer.class);
+                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });
