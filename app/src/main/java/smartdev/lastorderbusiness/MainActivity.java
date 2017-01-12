@@ -104,6 +104,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
+     * test
      * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
      * one of the sections/tabs/pages.
      */
