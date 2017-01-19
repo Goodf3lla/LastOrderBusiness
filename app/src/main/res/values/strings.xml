@@ -17,12 +17,14 @@
     <string name="sid_login_registration">Registration</string>
     <string name="sid_login_info">Not a member? Register now.</string>
 
-    <string name="sid_restaurant_name">Name</string>
+    <string name="sid_restaurant_eigentuemer">Eigentümer</string>
+    <string name="sid_restaurant_restaurantName">Restaurantname</string>
     <string name="sid_restaurant_address">Address</string>
     <string name="sid_restaurant_email">Email</string>
     <string name="sid_restaurant_password">Password</string>
     <string name="sid_restaurant_phonenumber">Phone Number</string>
     <string name="sid_restaurant_signup">Sign up</string>
+    <string name="sid_restaurant_save">Save</string>
     <string name="title_activity_main_navigation_drawer">MainNavigationDrawerActivity</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>

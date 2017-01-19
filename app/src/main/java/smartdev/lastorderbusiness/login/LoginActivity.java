@@ -20,7 +20,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import junit.framework.Test;
 
 import smartdev.lastorderbusiness.MainActivity;
-import smartdev.lastorderbusiness.MainNavigationDrawer;
+
 import smartdev.lastorderbusiness.R;
 import smartdev.lastorderbusiness.TESTERINO;
 
@@ -63,7 +63,7 @@ public class LoginActivity extends AppCompatActivity {
                             Toast.makeText(getApplicationContext(), "Your login was successfull ", Toast.LENGTH_LONG);
 
 
-                            Intent intent = new Intent(LoginActivity.this, TESTERINO.class);
+                            Intent intent = new Intent(LoginActivity.this, CreateProfile.class);
                             intent.putExtra("Email",firebaseAuth.getCurrentUser().getEmail());
                             startActivity(intent);
                         }

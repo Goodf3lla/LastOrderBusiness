@@ -17,7 +17,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 import smartdev.lastorderbusiness.MainActivity;
-import smartdev.lastorderbusiness.MainNavigationDrawer;
+
 import smartdev.lastorderbusiness.R;
 import smartdev.lastorderbusiness.TESTERINO;
 
@@ -59,7 +59,7 @@ public class RegistrationActivity extends AppCompatActivity {
                         if(task.isSuccessful()){
                             Log.e("Eroor","3");
                             Toast.makeText(getApplicationContext(), "Your registration was successfull " , Toast.LENGTH_LONG);
-                            Intent intent = new Intent(RegistrationActivity.this,TESTERINO.class);
+                            Intent intent = new Intent(RegistrationActivity.this, CreateProfile.class);
                             intent.putExtra("Email",firebaseAuth.getCurrentUser().getEmail());
                             startActivity(intent);
                         }
