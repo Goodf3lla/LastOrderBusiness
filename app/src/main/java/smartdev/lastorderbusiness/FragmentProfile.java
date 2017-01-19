@@ -8,6 +8,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 
 /**
@@ -27,6 +28,8 @@ public class FragmentProfile extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    private TextView email;
 
     OnFragmentInteractionListener mListener;
 
@@ -49,6 +52,7 @@ public class FragmentProfile extends Fragment {
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
+
         return fragment;
     }
 
@@ -61,18 +65,26 @@ public class FragmentProfile extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+
+
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        String str = getArguments().getString("Email");
+
+        email.setText(str);
         return inflater.inflate(R.layout.fragment_menu_profile, container, false);
     }
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstaState){
         super.onViewCreated(view, savedInstaState);
+
 
         getActivity().setTitle("Profile");
     }
